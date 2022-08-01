@@ -12,3 +12,7 @@
 .title{
   font-weight: bold!important;
 }
+
+.text-decorator-none{
+  text-decoration: none;
+}
