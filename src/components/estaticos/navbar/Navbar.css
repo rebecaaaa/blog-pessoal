@@ -1,7 +1,5 @@
-.bg-menu{
-  /* linear-gradient é uma função que permite adicionar Grandiente/Degradê em uma reta no nosso Plano de Fundo */
-  background: linear-gradient(36deg, #f0c25a 8%, #8f4b25 89%);
-}
+
+
 
 .container{
   display: flex;
@@ -14,5 +12,7 @@
 }
 
 .text-decorator-none{
+  color: #ffffff;
   text-decoration: none;
 }
+

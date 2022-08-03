@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 import Home from "./paginas/home/Home";
 import "./App.css";
 import Login from "./paginas/login/Login";
+import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Route path="/home" element={<Home />} />
 
       <Route path="/login" element={<Login />} />
+
+      <Route path="/cadastrousuario" element={<CadastroUsuario />} />
 
     </Routes>
     <Footer />
