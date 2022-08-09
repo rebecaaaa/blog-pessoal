@@ -3,8 +3,8 @@ import { Grid, Typography, Button, TextField } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import "./CadastroUsuario.css";
-import User from "../models/User";
-import { cadastroUsuario } from "../services/Service";
+import User from "../../models/User";
+import { cadastroUsuario } from "../../services/Service";
 
 function CadastroUsuario() {
   let navigate = useNavigate()
@@ -53,7 +53,7 @@ function CadastroUsuario() {
             //Tenta executar o cadastro
             try {
                 await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-                alert("Usuário cadastrado com sucesso")
+                alert("Usuário cadastrado com sucesso!")
 
             //Se houver erro, pegue o Erro e retorna uma msg
             } catch (error) {

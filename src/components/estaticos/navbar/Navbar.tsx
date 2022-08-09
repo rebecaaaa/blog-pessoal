@@ -26,29 +26,36 @@ function Navbar() {
                   </Box>
                   </Link>
                   <Box mx={1} style={{ cursor: "pointer" }}>
+                  <Link to='/posts' className='text-decorator-none'>
                       <Typography variant="h6" color="inherit">
                           postagens
                       </Typography>
+                      </Link>
                   </Box>
                   <Box mx={1} style={{ cursor: "pointer" }}>
+                  <Link to='/temas' className='text-decorator-none'>
                       <Typography variant="h6" color="inherit">
                           temas
                       </Typography>
+                      </Link>
                   </Box>
                   
                   <Box mx={1} style={{ cursor: "pointer" }}>
+                  <Link to='/formularioTema' className='text-decorator-none'>
                       <Typography variant="h6" color="inherit">
                           cadastrar tema
                       </Typography>
+                    </Link>
                   </Box>
                   
+                
+                  <Box mx={1} style={{ cursor: "pointer" }}>  
                   <Link to='/login' className='text-decorator-none'>
-                  <Box mx={1} style={{ cursor: "pointer" }}>
                       <Typography variant="h6" color="inherit">
                           logout
                       </Typography>
-                  </Box>
-                  </Link>
+                   </Link>
+                    </Box>
               </Box>
 
           </Toolbar>
