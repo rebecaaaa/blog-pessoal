@@ -13,10 +13,16 @@ import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
 import CadastroTema from "./components/temas/cadastroTema/CadastroTema";
 import DeletarPostagem from "./components/postagens/deletarPostagem/DeletarPostagem";
 import DeletarTema from "./components/temas/deletarTema/DeletarTema";
+import store from "./store/store";
+import {Provider} from 'react-redux';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 /* A function that returns a Router, Navbar, Routes, Route, Footer. */
 function App() {
   return (
+    <Provider store={store}>
+      <ToastContainer />
     <Router>
       <Navbar />
       <Routes>
@@ -41,12 +47,13 @@ function App() {
         <Route path="/formularioTema/:id" element={<CadastroTema />} />
 
         <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
-/* A route that is used to delete a theme. */
+
 
         <Route path="/deletarTema/:id" element={<DeletarTema />} />
       </Routes>
       <Footer />
     </Router>
+    </Provider>
   );
 }
 
